@@ -26,14 +26,13 @@ public class MainClient {
 			//create
 			Person person = new Person("John","Doe",Calendar.getInstance());
 			person = service.add(person);
-			System.out.println("Saved: Person.id = " + person.getId());
-			System.out.println("Saved: Person.FirstName = " + person.getFirstName());
+			System.out.println("Saved: Person: id = " + person.getId() + " : FirstName = " + person.getFirstName());
+		
 			
 			//update
-			person.setFirstName("Jane");
+			person.setFirstName("Updated-Name");
 			service.update(person);
-			System.out.println("Updated: Person.id = " + person.getId());
-			System.out.println("Updated: Person.FirstName = " + person.getFirstName());
+			System.out.println("Updated: Person: id = " + person.getId()+" : FirstName = " + person.getFirstName());
 			
 			//delete
 			service.delete(person.getId());

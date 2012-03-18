@@ -5,7 +5,12 @@ import java.util.Calendar;
 
 public class Person implements Serializable {
 	
-	private Integer id;
+	/**
+   * 
+   */
+  private static final long serialVersionUID = 1L;
+  
+  private Integer id;
 	private String firstName;
 	private String lastName;
 	private Calendar birthDate;
